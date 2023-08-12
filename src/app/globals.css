@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: white;
+  background: var(--pp-3-background, linear-gradient(134deg, #984D38 0%, #181E41 63.29%));
+}
+.myNav{
+  background: inherit;
+}
+.button{
+  border-radius: 10px;
+background: var(--pp-2-purple, linear-gradient(214deg, #B75CFF 0%, #671AE4 100%));
+padding: 10px 20px;
+color:white;
+}
+.buttonF{
+  width: 337px;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  border:1px solid rgba(183,92,255,1);
+  color:rgba(183,92,255,1)
+}
+.createButton{
+  border-radius: 10px;
+padding: 10px 20px;
+color:white;
+background: var(--white-10, rgba(255, 255, 255, 0.10));
+}
+.card{
+  border-radius: 10px;
+background: var(--white-10, rgba(255, 255, 255, 0.10));
+box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.25);
+}
