@@ -4,10 +4,12 @@
 
 body {
   color: white;
-  background: var(--pp-3-background, linear-gradient(134deg, #984D38 0%, #181E41 63.29%));
+  background: #181E41
 }
 .myNav{
-  background: inherit;
+  background: #181E41
+
+
 }
 .button{
   border-radius: 10px;
