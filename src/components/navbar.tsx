@@ -41,24 +41,9 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 export default function Navbar() {
-    const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.pageYOffset;
-      setIsScrolled(scrollTop > 0);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  });
+   
   return (
-    <Disclosure as="nav" className={`fixed top-0 w-full z-50 ${
-        isScrolled ? 'myNav' : 'bg-transparent'
-      } `}>
+    <Disclosure as="nav" className={`fixed top-0 w-full z-50 myNav`}>
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">

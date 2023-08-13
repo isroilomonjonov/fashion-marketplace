@@ -32,7 +32,7 @@ const CollectionCard = ({data}:{data:LikeDataType}) => {
               <HeartIcon style={{ fill: "red" }} />
             ) : (
               <HeartIconOut
-                style={{ stroke: "red",opacity:'.5' }}
+                style={{stroke:'white' }}
               />
             )}
           </button>
